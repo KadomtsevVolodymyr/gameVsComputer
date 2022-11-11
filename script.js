@@ -1,4 +1,7 @@
-const userName = prompt("Write your name");
+let userName = prompt("Write your name", "User");
+if (userName === "") {
+  userName = "User";
+}
 const user__name = document.querySelector(".user__name");
 user__name.textContent = userName;
 const btn = document.querySelector(".generate");
